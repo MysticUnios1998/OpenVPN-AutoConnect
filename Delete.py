@@ -3,7 +3,7 @@ import sys
 import subprocess
 import time
 
-executable = "C:/Program Files/OpenVPN/bin/openvpn-gui.exe"
+exec = "C:/Program Files/OpenVPN/bin/openvpn-gui.exe"
 args = "--command connect client.ovpn"
 local_ip = "127.0.0.1"
 port = "25340"
@@ -27,7 +27,7 @@ def check_processes_by_port(port_id):
 
 def main():
 	check_processes_by_port(port)
-	os.system("\"{}\" {}".format(executable, args))
+	#os.system("\"{}\" {}".format(exec, args))
 	os.system('echo Conectado a vpn')
 
 
